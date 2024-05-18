@@ -2,6 +2,14 @@ import Title from "../Components/Title";
 const Home = () => {
   return (
     <div className="w-full h-screen bg-gradient-to-bl text-center flex flex-col items-center lg:py-32 md:py-24 py-16 from-zinc-900 to-blue-900 text-white">
+      <Title
+        title={
+          "CWR Components - Streamline Your Projects with Customizable Components"
+        }
+        description={
+          "Discover CWR Components, your go-to library for high-quality, customizable components designed to save you time and enhance your projects. Perfect for developers and designers, our intuitive components simplify your workflow and elevate your work. Stay tuned for our launch and revolutionize your development process with CWR Components."
+        }
+      />
       <h1 className="text-3xl font-light tracking-widest">CWR - COMPONENTS</h1>
       <div className="flex flex-col items-center lg:mt-20 md:mt-16 mt-10">
         <h1 className="lg:text-5xl md:text-4xl text-3xl font-semibold">
