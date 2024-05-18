@@ -1,7 +1,7 @@
 import Title from "../Components/Title";
 const Home = () => {
   return (
-    <div className="w-full h-screen bg-gradient-to-bl text-center flex flex-col items-center lg:py-32 md:py-24 py-16 from-zinc-900 to-blue-900 text-white">
+    <div className="w-full lg:h-screen bg-gradient-to-bl text-center flex flex-col items-center lg:py-32 md:py-24 py-16 from-zinc-900 to-blue-900 text-white">
       <Title
         title={
           "CWR Components - Streamline Your Projects with Customizable Components"
