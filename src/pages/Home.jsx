@@ -34,7 +34,7 @@ const Home = () => {
             <a
               href="https://codewithraju.vercel.app"
               target="_blank"
-              className="px-5 py-2 font-bold mt-10 inline-block border-2 rounded-md relative after:content-[''] after:w-full after:h-full after:bg-white after:absolute after:left-0 after:top-0 overflow-hidden after:transition-all after:duration-300 after:scale-0 hover:after:scale-100 hover:text-black transition-all duration-300"
+              className="px-5 py-2 font-bold mt-10 inline-block border-2 rounded-md relative after:content-[''] after:w-full after:h-full after:bg-white after:absolute after:left-0 after:top-0 overflow-hidden after:transition-all after:duration-300 after:scale-0 hover:after:scale-100 after:rounded-[50%] hover:after:rounded-none hover:text-black transition-all duration-300"
             >
               <span className="relative z-20">Contact us</span>
             </a>

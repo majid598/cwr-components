@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import { Helmet } from "react-helmet";
+import { Toaster } from "react-hot-toast";
+import Test from "./Test";
 
 const App = () => {
   return (
@@ -21,7 +23,9 @@ const App = () => {
       </Helmet>
       <Routes>
         <Route path="/" element={<Home />} />
+        {/* <Route path="/test" element={<Test />} /> */}
       </Routes>
+      <Toaster position="bottom-center" />
     </Router>
   );
 };

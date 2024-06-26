@@ -1,8 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
+import toast from "react-hot-toast";
 import { FaGithub, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
 import { TbBrandFiverr } from "react-icons/tb";
+
+const server = import.meta.env.VITE_SERVER;
 
 const Footer = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -12,15 +15,17 @@ const Footer = () => {
     setIsLoading(true);
     e.preventDefault();
     await axios
-      .post("http://localhost:5000/api/v1/subscribe/new", data)
-      .then((data) => {
+      .post(`${server}/api/v1/subscribe/new`, data)
+      .then(({ data }) => {
         console.log(data);
         setIsLoading(false);
         setEmail("");
+        toast.success(data?.message);
       })
       .catch((err) => {
         console.log(err?.response?.data?.message);
         setIsLoading(false);
+        toast.error(err?.response?.data?.message);
       });
   };
 
