@@ -5,7 +5,7 @@ import { FaGithub, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
 import { TbBrandFiverr } from "react-icons/tb";
 
-const server = import.meta.env.VITE_SERVER;
+const server = "https://cwr-qv3m.onrender.com/";
 
 const Footer = () => {
   const [isLoading, setIsLoading] = useState(false);
