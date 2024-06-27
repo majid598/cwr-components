@@ -51,8 +51,7 @@ const Footer = () => {
               placeholder="Email Address"
             />
             <button className="px-4 py-3 rounded-lg text-white bg-red-600 font-bold hover:bg-red-700 transition-all duration-300 border-b-2 border-r-2 border-t border-l border-white/70">
-              {/* {isLoading ? <Loader /> : "Subscribe"} */}
-              <Loader />
+              {isLoading ? <Loader /> : "Subscribe"}
             </button>
           </form>
           <div className="flex gap-4 mt-10">
